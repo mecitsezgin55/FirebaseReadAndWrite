@@ -60,5 +60,7 @@ dependencies {
     }
 ```
 
-#References
+## References
+```
 https://rnfirebase.io/database/usage
+```
