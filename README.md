@@ -37,3 +37,25 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 }
 ```
+
+
+* Example
+```
+   componentDidMount(){
+        database()  // okuma
+            .ref('/users/123')
+            .set({
+                name: 'Ada Lovelace',
+                age: 31,
+        })
+        .then(() => console.log('Data set.'));
+
+
+        database() //yazma
+            .ref('/users/123')
+            .once('value')
+            .then(snapshot => {
+                console.log('User data: ', snapshot.val());
+        });
+    }
+```
