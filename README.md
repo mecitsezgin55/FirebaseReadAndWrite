@@ -59,3 +59,6 @@ dependencies {
         });
     }
 ```
+
+#References
+https://rnfirebase.io/database/usage
